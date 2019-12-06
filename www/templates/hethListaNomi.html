@@ -1,0 +1,15 @@
+<ion-view title="ח - Ḥeth" id="page243">
+  <ion-content padding="true" class="has-header">
+    <form id="hethListaNomi-form1" class="list">
+      <label class="item item-input" id="hethListaNomi-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+
+    <ion-item id="hethListaNomi-list-item2" ui-sref="hethtutorial({&quot;videokey&quot;:&quot;&quot;+hethtutorial.key+&quot;&quot;})" ng-repeat="hethtutorial in narrowed_hethtutorials">{{hethtutorial.termine}} - {{hethtutorial.traslitterazione}}</ion-item>
+ 
+   
+       
+  </ion-content>
+</ion-view>

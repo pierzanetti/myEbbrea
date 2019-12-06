@@ -1,0 +1,15 @@
+<ion-view title="ה - He" id="page13">
+  <ion-content padding="true" class="has-header">
+    <form id="heListaNomi-form1" class="list">
+      <label class="item item-input" id="heListaNomi-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+
+    <ion-item id="heListaNomi-list-item2" ui-sref="hetutorial({&quot;videokey&quot;:&quot;&quot;+hetutorial.key+&quot;&quot;})" ng-repeat="hetutorial in narrowed_hetutorials">{{hetutorial.termine}} - {{hetutorial.traslitterazione}}</ion-item>
+ 
+   
+       
+  </ion-content>
+</ion-view>

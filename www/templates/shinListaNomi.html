@@ -1,0 +1,15 @@
+<ion-view title="שׁ - Shin" id="page53">
+  <ion-content padding="true" class="has-header">
+    <form id="shinListaNomi-form1" class="list">
+      <label class="item item-input" id="shinListaNomi-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+
+    <ion-item id="shinListaNomi-list-item2" ui-sref="shintutorial({&quot;videokey&quot;:&quot;&quot;+shintutorial.key+&quot;&quot;})" ng-repeat="shintutorial in narrowed_shintutorials">{{shintutorial.termine}} - {{shintutorial.traslitterazione}}</ion-item>
+ 
+   
+       
+  </ion-content>
+</ion-view>

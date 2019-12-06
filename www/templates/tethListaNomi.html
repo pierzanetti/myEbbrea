@@ -1,0 +1,15 @@
+<ion-view title="ט - teth lista nomi" id="page15">
+  <ion-content padding="true" class="has-header">
+    <form id="tethListaNomi-form1" class="list">
+      <label class="item item-input" id="tethListaNomi-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+
+    <ion-item id="tethListaNomi-list-item2" ui-sref="tethtutorial({&quot;videokey&quot;:&quot;&quot;+tethtutorial.key+&quot;&quot;})" ng-repeat="tethtutorial in narrowed_tethtutorials">{{tethtutorial.termine}} - {{tethtutorial.traslitterazione}}</ion-item>
+ 
+   
+       
+  </ion-content>
+</ion-view>

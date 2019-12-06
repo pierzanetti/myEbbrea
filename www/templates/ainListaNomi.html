@@ -1,0 +1,15 @@
+<ion-view title="ע - ‛ain" id="page251">
+  <ion-content padding="true" class="has-header">
+    <form id="ainListaNomi-form1" class="list">
+      <label class="item item-input" id="ainListaNomi-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+
+    <ion-item id="ainListaNomi-list-item2" ui-sref="aintutorial({&quot;videokey&quot;:&quot;&quot;+aintutorial.key+&quot;&quot;})" ng-repeat="aintutorial in narrowed_aintutorials">{{aintutorial.termine}} - {{aintutorial.traslitterazione}}</ion-item>
+ 
+   
+       
+  </ion-content>
+</ion-view>
