@@ -1,5 +1,4 @@
-<ion-view title="ע - ‛ain" id="page251">
-  
+<ion-view title="ע - ‛ain" id="page251">  
   <ion-content padding="true" class="has-header">
     <form id="ainListaNomi-form1" class="list">
       <label class="item item-input" id="ainListaNomi-search1">
@@ -8,9 +7,17 @@
       </label>
     </form>
 
-    <ion-item id="ainListaNomi-list-item2" ui-sref="aintutorial({&quot;videokey&quot;:&quot;&quot;+aintutorial.key+&quot;&quot;})" ng-repeat="aintutorial in narrowed_aintutorials">{{aintutorial.termine}} - {{aintutorial.traslitterazione}}</ion-item>
- 
-   
-       
+    <ion-item id="ainListaNomi-list-item2" ui-sref="aintutorial({&quot;videokey&quot;:&quot;&quot;+aintutorial.key+&quot;&quot;})" ng-repeat="aintutorial in narrowed_aintutorials">
+    <div class="row">
+      <div class="col"><p><i>{{aintutorial.traslitterazione}}</i></p></div>
+      <div class="col" align="right"><h2>{{aintutorial.termine}}</h2></div>
+    </div>
+    </ion-item>
+  
+<!--
+  <ion-item id="ainListaNomi-list-item2" ui-sref="aintutorial({&quot;videokey&quot;:&quot;&quot;+aintutorial.key+&quot;&quot;})" ng-repeat="aintutorial in narrowed_aintutorials">
+    {{aintutorial.termine}} - {{aintutorial.traslitterazione}}
+  </ion-item>
+-->
   </ion-content>
 </ion-view>

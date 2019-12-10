@@ -297,7 +297,7 @@ angular.module('app.routes', [])
 
 
   
-/**tutorial */
+/**tutorial **/
 
 
   .state('tutorial', {
